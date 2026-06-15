@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Hospital Appointment Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>AI-Enabled Hospital Appointment Booking System</h1>
+    </header>
+
+    <div class="container">
+
+        <h2>Book Appointment</h2>
+
+        <form id="appointmentForm">
+
+            <label>Patient Name</label>
+            <input type="text" id="name" required>
+
+            <label>Age</label>
+            <input type="number" id="age" required>
+
+            <label>Symptoms</label>
+            <textarea id="symptoms" required></textarea>
+
+            <label>Doctor</label>
+            <select id="doctor">
+                <option>General Physician</option>
+                <option>Cardiologist</option>
+                <option>Dermatologist</option>
+                <option>Neurologist</option>
+            </select>
+
+            <label>Date</label>
+            <input type="date" id="date" required>
+
+            <button type="submit">Book Appointment</button>
+
+        </form>
+
+        <div id="result"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
